@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    background-color:green;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main form{
+    padding:20px;
+    border: 1px solid #000;
+    border-radius:5px;
+    background: linear-gradient(#1b1b1b, #111);
+}
+.main input{
+    background: #222;
+    background: linear-gradient(#333, #222);
+    border: 1px solid #555;
+    height: 40px;
+    padding: 0 10px;
+    text-shadow: 0 -1px 0 #000;
+    width: 500px;
+    border-radius:5px;
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+}
+.main button{
+    height:40px;
+    padding:0 10px;
+    background: #222;
+    background: linear-gradient(#333, #222);
+    border: 1px solid #555;
+    border-radius:5px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.main button:active{
+    scale:0.9 ;
+}
+.main input:focus{
+  animation: glow 800ms infinite alternate;
+  animation: glow 800ms ease-out infinite alternate;
+  background: #222922;
+  background: linear-gradient(#333933, #222922);
+  border-color: #393;
+  box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+  color: #efe;
+  outline: none;
+}
+.main button:hover{
+    border-color:#393;
+    color: #393;
+    transition: all 1s ease;
+}
+
+@keyframes glow{
+    0% {
+        border-color: #393;
+        box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+      }
+      100% {
+        border-color: #6f6;
+        box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
+      }
+}
